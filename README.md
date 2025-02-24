@@ -55,8 +55,8 @@ TIC-TAC-TOE/
 ## 🚀 Getting Started
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/TIC-TAC-TOE.git
-cd TIC-TAC-TOE
+git clone https://github.com/YOUR_USERNAME/Tic-Tac-Toe.git
+cd Tic-Tac-Toe
 ```
 
 ### 2️⃣ Open `index.html`
