@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Character encoding and responsive design -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tic Tac Toe</title> <!-- Page title -->
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO Meta Description (optional) -->
+  <meta name="description" content="Play a fun game of Tic Tac Toe!">
+
+  <!-- Open Graph (OG) meta tags for social sharing -->
+  <meta property="og:title" content="Tic Tac Toe Game">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <!-- Favicon and Icons for different devices -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Link to JavaScript file (defer ensures script loads after HTML) -->
+  <script src="js/app.js" defer></script>
+
+  <!-- Main Heading -->
+  <h1>TIC TAC TOE</h1>
+
+  <!-- Game Board: 3x3 Grid -->
+  <div id="board">
+    <!-- Each cell represents a square in the Tic Tac Toe grid -->
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+
+  <!-- Status message (displays whose turn it is or the winner) -->
+  <p id="gameStatus">Player X's turn</p>
+
+  <!-- Reset button to restart the game -->
+  <button id="reset">Reset Game</button>
+
+</body>
+</html>

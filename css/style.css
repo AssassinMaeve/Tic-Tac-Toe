@@ -1,0 +1,102 @@
+/* =======================
+   CUSTOM FONT IMPORT
+   ======================= */
+   @font-face {
+    font-family: "PixelGame";
+    src: url("/fonts/PixelGameFont.ttf") format("truetype");
+  }
+  
+  /* =======================
+     GLOBAL STYLES
+     ======================= */
+  body {
+    text-align: center; /* Centers all text content */
+    font-family: Arial, sans-serif; /* Default font if custom font fails */
+    background-color: #4a96c5; /* Light blue background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* =======================
+     HEADINGS
+     ======================= */
+  h1 {
+    text-align: center;
+    font-family: "PixelGame", Helvetica; /* Use custom font, fallback to Helvetica */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: clamp(2rem, 5vw, 5em); /* Responsive text size */
+  }
+  
+  /* =======================
+     GAME BOARD STYLING
+     ======================= */
+  #board {
+    width: min(90vw, 600px); /* Max 600px but shrinks on small screens */
+    height: min(90vw, 600px);
+    margin: 0 auto; /* Center the board */
+    background-color: #0075aa; /* Board background color */
+    color: #fff; /* Text color */
+    border: 6px solid #00366a; /* Dark blue border */
+    border-radius: 10px; /* Rounded corners */
+    display: grid; /* Grid layout for Tic-Tac-Toe */
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr); /* 3x3 Grid */
+  }
+  
+  /* =======================
+     GAME CELLS (Tic-Tac-Toe Squares)
+     ======================= */
+  .cell {
+    border: 4px solid #00366a; /* Cell border */
+    border-radius: 2px; /* Slightly rounded corners */
+    font-family: "PixelGame", sans-serif; /* Custom font */
+    font-weight: bold;
+    font-size: clamp(2rem, 8vw, 4em); /* Responsive text */
+    display: flex; /* Center content */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* =======================
+     GAME STATUS MESSAGE
+     ======================= */
+  #gameStatus {
+    margin-top: 20px;
+    font-size: clamp(1rem, 3vw, 1.5em);
+    font-family: "PixelGame", sans-serif;
+  }
+  
+  /* =======================
+     RESET BUTTON STYLING
+     ======================= */
+  #reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: clamp(1rem, 3vw, 1.2em);
+    font-family: "PixelGame", Arial, Helvetica, sans-serif; /* Custom font with fallbacks */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none;
+    background: #00366a; /* Dark blue background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* =======================
+     MOBILE RESPONSIVENESS
+     ======================= */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem; /* Reduce heading size */
+    }
+  
+    #board {
+      width: 90vw;
+      height: 90vw; /* Ensure square shape */
+    }
+  
+    .cell {
+      font-size: 2rem; /* Adjust cell text size */
+      border: 2px solid #00366a; /* Smaller borders */
+    }
+  }
+  
