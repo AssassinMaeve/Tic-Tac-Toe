@@ -69,12 +69,6 @@ npm install
 npm run start
 ```
 
-## 🌐 Hosting on GitHub Pages
-If you want to deploy the project on **GitHub Pages**, follow these steps:
-1. Push your project to a repository.
-2. Create a branch called `gh-pages`.
-3. Enable GitHub Pages from the repository settings.
-
 ## 📜 License
 This project is licensed under the **MIT License**.
 
