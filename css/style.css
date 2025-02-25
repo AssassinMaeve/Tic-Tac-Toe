@@ -2,9 +2,11 @@
    CUSTOM FONT IMPORT
    ======================= */
    @font-face {
-    font-family: "PixelGame";
-    src: url("/fonts/PixelGameFont.ttf") format("truetype");
-  }
+    font-family: 'PixelGame';
+    src: url('../fonts/PixelGameFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
   
   /* =======================
      GLOBAL STYLES
