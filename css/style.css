@@ -2,9 +2,11 @@
    CUSTOM FONT IMPORT
    ======================= */
    @font-face {
-    font-family: "PixelGame";
-    src: url("/fonts/PixelGameFont.ttf") format("truetype");
-  }
+    font-family: 'PixelGame';
+    src: url('../fonts/PixelGameFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
   
   /* =======================
      GLOBAL STYLES
@@ -22,7 +24,7 @@
      ======================= */
   h1 {
     text-align: center;
-    font-family: "PixelGame", Helvetica; /* Use custom font, fallback to Helvetica */
+    font-family: 'PixelGame', Helvetica; /* Use custom font, fallback to Helvetica */
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: clamp(2rem, 5vw, 5em); /* Responsive text size */
@@ -49,7 +51,7 @@
   .cell {
     border: 4px solid #00366a; /* Cell border */
     border-radius: 2px; /* Slightly rounded corners */
-    font-family: "PixelGame", sans-serif; /* Custom font */
+    font-family: 'PixelGame', sans-serif; /* Custom font */
     font-weight: bold;
     font-size: clamp(2rem, 8vw, 4em); /* Responsive text */
     display: flex; /* Center content */
@@ -63,7 +65,7 @@
   #gameStatus {
     margin-top: 20px;
     font-size: clamp(1rem, 3vw, 1.5em);
-    font-family: "PixelGame", sans-serif;
+    font-family: 'PixelGame', sans-serif;
   }
   
   /* =======================
@@ -73,7 +75,7 @@
     margin-top: 20px;
     padding: 10px 20px;
     font-size: clamp(1rem, 3vw, 1.2em);
-    font-family: "PixelGame", Arial, Helvetica, sans-serif; /* Custom font with fallbacks */
+    font-family: 'PixelGame', Arial, Helvetica, sans-serif; /* Custom font with fallbacks */
     cursor: pointer; /* Pointer cursor on hover */
     border: none;
     background: #00366a; /* Dark blue background */
